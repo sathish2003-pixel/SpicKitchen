@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!--cdn for bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--favicn-->
+    <link rel="icon"  href="/favicon.ico"/>
+    <link rel="icon" type="image/png" href="images/dish.png">
+    
+    <!--AOS Cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+      
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Inter&family=Kaushan+Script&family=Merienda:wght@400;700&family=Oswald:wght@600&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Signika:wght@300;500&family=Tajawal&family=Teko:wght@300&display=swap" rel="stylesheet">
+       
+    <title>Spicy kitchen</title>
+    <style>
+     
+ 
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/**nav bar style*/
+ .navbar{
+
+/* font-family: navbar; 
+text-align: center;
+ background:linear-gradient(to left, #e66465, #9198e5);  */
+background-color: #15152d;
+}
+
+
+
+.navbar li a {
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+    color:yellow;
+}
+
+.navbar li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px white;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.navbar li:hover:after {
+    transform: scaleX(1);
+    color:white;
+} 
+
+/* navbar button */
+ .btn{
+  color:white;
+  margin: 4px;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+  transition: all 0.2s ease-in-out;
+}
+.navlink{
+  color:#52E1E2;
+} 
+
+.heading .img-fluid{
+    animation: imgRotate 10s linear infinite;
+      
+}
+
+@keyframes imgRotate { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}  
+ 
+.heading{
+  background: linear-gradient(rgba(15, 23, 43, .8), rgba(15, 23, 43, .8)), url(./images/pexels-chan-walrus-958545\ \(1\).jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+} 
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+ */
+
+
+
+
+  </style>
+</head>
+
+
+
+
+
+
+
+
+ <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50"> 
+  
+  
+<!--nav bar started-->
+ <div id="home">
+   <nav class="navbar fixed-top navbar-expand-md navbar">
+    <div class="container-fluid">
+     <img src="images/dish.png" width="80px" height="80px" alt="logo" class="image-responsive"> 
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="#home" style="color:yellow ! important;">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./usermenuview.php">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          
+          <button onclick="window.location.href='adminlogin.php';" class="btn btn-outline-warning" type="button"><i class="bi bi-person-circle"></i>Admin</button>
+
+          <button onclick="window.location.href='booktable.php';" class="btn btn-outline-warning" type="button"><i class="bi bi-journal-medical"></i>Book Your Table</button>
+        </form>
+      </div>
+      
+    </div>
+  </nav>
+  
+ 
+
+<!---nav bar ended-->
+<!--home started-->
+<br><br><br>
+<div class="heading">
+<div class="container-fluid py-5">
+  <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6 text-center text-xxl-start text-light"data-aos="zoom-in" data-aos-duration="1500">
+          <h1>Welcome to Spicy Kitchen<i class="fa fa-1x fa-utensils text-light mb-4"></i></h1>
+          <h2 class="text-light animated slideInLeft mb-4 pb-2">This is a Simply heaven for biriyani lovers</h2>
+          <a href="./booktable.php" class="btn btn-outline-warning  btn-sm py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+      </div>
+        <div class="col-lg-6 text-center text-lg-end overflow-hidden" data-aos="fade-down"data-aos-easing="linear"
+        data-aos-duration="1500">
+        <img class="img-fluid" src="./images/ddfff.png" alt=""width="800" height="600">
+    </div>  
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+<!--heading ended -->
+
+
+<div class="container-fluid">
+  
+   <div class="row">
+
+    <div class="col-md-4">
+      <img src="images/muttton biriyani.jpeg"class="img-thumbnail" data-aos="zoom-in" data-aos-easing="linear"
+      data-aos-duration="1500" alt="image" width="400" height="100">
+    </div>
+
+    <div class="col-md-8">
+      <figure class="text-start">
+        <blockquote class="blockquote">
+          <h4 class=" display-4 text-dark"data-aos="fade-out">
+            Little about us
+          </h4>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <p class="lead text-dark" data-aos="fade-up">We love making our customers happy by serving them our tasty food and snacks!<br> High-quality ingredients mixed with excellent service is the best recipe for successful food..</p>
+        </figcaption>
+      </figure>
+      </div>
+</div>
+
+
+<br><br>
+
+  <div class="row">
+    <div class="col-md-8">
+      <figure class="text-start">
+        <blockquote class="blockquote">
+          <h4 class=" display-4 text-dark"data-aos="fade-out">
+            Perfect Ingredients
+          </h4>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <p class="lead text-dark" data-aos="fade-up">We keep all the ingredients seasonal, well-sourced and of the highest quality.<br> Everything is hand-iced and baked in small batches to really give the essence of simple old fashioned cooking.</p>
+        </figcaption>
+      </figure>                           
+    </div>
+
+    <div class="col-md-4">
+      <img src="./images/three-col-1-2048x0.jpg"class="img-thumbnail" alt="image" width="400" height="100" data-aos="zoom-in" data-aos-easing="linear"data-aos-duration="1500">
+    
+      </div>
+</div>
+</div>
+  
+
+
+<!--home ended-->
+
+
+        <!-- Service Start -->
+        <style>
+          .card {
+            backdrop-filter: blur(5px) saturate(185%);
+    -webkit-backdrop-filter: blur(5px) saturate(185%);
+    background-color: rgba(1, 13, 41, 0.27);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+          }
+
+.back{
+ 
+ background: linear-gradient(rgba(15, 23, 43, .4), rgba(15, 23, 43, .4)), url(./images/body\ image.jpg);
+  background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+    
+    
+} 
+
+
+        </style>
+        <div class="back">
+        <div class="container-xxl back text-light py-5 my-5">
+          <div class="container">
+            <div class="row g-4">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <div class="service-item rounded pt-3">
+                    
+                          <div class="p-4">
+                              <i class="fa fa-4x fa-user-tie text-warning mb-4"></i>
+                              <h5>Master Chefs</h5>
+                              <p>High quality and taste are prime importance, and because our brand of Biriyani popularity all across India.</p>
+                          </div>
+                      
+                      </div>
+                      </div>
+                  </div>
+
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <div class="service-item rounded pt-3">
+                          <div class="p-4">
+                              <i class="fa fa-4x fa-utensils text-warning mb-4"></i>
+                              <h5>Quality Food</h5>
+                              <p>High quality and taste are prime importance, and because our brand of Biriyani popularity all across India.</p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <div class="service-item rounded pt-3">
+                          <div class="p-4">
+                              <i class="fa fa-4x fa-cart-plus text-warning mb-4"></i>
+                              <h5>Online Order</h5>
+                              <p>We now deliver our signature, authentic Buhari food to you in the comfort of your place. Click above to order online.
+
+                              </p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                      <div class="service-item rounded pt-3">
+                          <div class="p-4">
+                              <i class="fa fa-4x fa-headset text-warning mb-4"></i>
+                              <h5>Reservation</h5>
+                              <p>We now deliver our signature, authentic Buhari food to you in the comfort of your place. Click above to order online.
+
+                              </p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+              </div>
+              </div>
+          </div>
+      </div>
+     
+      
+      <!-- Service End -->
+
+
+
+
+
+
+
+   
+<div id="about" class="container-fluid">
+    <div class="row"  data-aos="fade-up" data-aos-duration="3000">
+      <div class="col-xxl-6">
+        <h1 class="text-warning"><b>About us</b></h1>
+
+
+       <h4 style="color:#3B185F;  text-indent: 50px; word-spacing: 10px;" > Spicy Kitchen opened its first outlet in the year 2000 and has grown ! from a single shop selling 10 Kgs of Biriyani to 25 modern outlets preparing other delectable Indian cuisine. Currently have upwards of 1000 walk-in’s daily and sell more than a ton of biriyani daily..</ul></h4>
+
+</div><div class="col-xxl-6">
+<img src="./images/65 biriyani.jpg" class="img-fluid"></div>
+</div>
+</div> 
+
+   <!-- Reservation Start -->
+   <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row g-0">
+      
+        <div class="col-md-6  d-flex align-items-center" style="background-color: #3B185F;" data-aos="zoom-in" data-aos-duration="2500">
+            <div class="p-5 wow fadeInUp" data-wow-delay="0.2s" >
+            <h3 class="section-title ff-secondary text-start text-primary fw-normal">Keep in touch</h3>
+            
+                <form class="table">
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-floating date" id="date3" data-target-input="nearest">
+                                <input type="number" class="form-control" placeholder="Your Phone" />
+                                <label>Phone</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                <label for="message">Comments</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-outline-primary w-100 py-3" type="submit">SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<!-- Reservation Start -->
+
+
+<br><br><br>
+        <!-- Contact Start -->
+        <div id="Contact">
+        <div class="container-xxl py-5">
+          <div class="container">
+              <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                  <h5 class="section-title ff-secondary text-center text-primary fw-normal" data-aos="fade-down" data-aos-duration="2000">Contact Us</h5>
+                  <h1 class="mb-5" data-aos="fade-up" data-aos-duration="2000">Contact For Any Query</h1>
+              </div>
+                  </div> 
+      </div>
+      </div>
+      <!-- Contact End -->
+
+
+      <!-- Footer Start -->
+      <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+          <div class="container py-5">
+              <div class="row g-5">
+               
+                  <div class="col-lg-4 col-md-6">
+                      <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                      <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>12 South Street,Tirunelveli-Town</p>
+                      <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9025893381</p>
+                      <p class="mb-2"><i class="fa fa-envelope me-3"></i>spicykitchen.com</p>
+                      <div class="d-flex pt-2">
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                          <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                      <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                      <p>09AM - 09PM</p>
+                      <h5 class="text-light fw-normal">Sunday</h5>
+                      <p>10AM - 08PM</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Follow us on</h4>
+                      <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> 
+                    </div>
+                  </div>
+              </div>
+          </div>
+<!--                 <!-- Footer End -->
+
+
+<script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>
