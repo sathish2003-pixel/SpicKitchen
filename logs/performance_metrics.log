@@ -1,0 +1,339 @@
+2025-11-28 12:11:12,108 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-28 12:11:12,110 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-28 12:11:12,112 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-28 12:11:12,112 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-28 12:11:13,395 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-28 12:11:13,395 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-28 12:11:13,396 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-28 12:11:13,406 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-28 12:11:13,406 - Knowledge - INFO - load persisted knowledge: end
+2025-11-28 12:11:13,406 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2025-11-28 12:11:13,419 - Knowledge - INFO - Redis support added with prefix knowledge:b8614m0:
+2025-11-28 12:11:13,507 - Knowledge - INFO - Starting knowledge initialization for ID: d2uFJL-b8614m0
+2025-11-28 12:11:13,507 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8614m0
+2025-11-28 12:11:13,507 - Knowledge - INFO - 🔍 Full session ID: d2uFJL-b8614m0
+2025-11-28 12:11:13,508 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8614m0:
+2025-11-28 12:11:13,508 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-28 12:11:13,508 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-28 12:11:13,508 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8614m0
+2025-11-28 12:11:14,487 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-28 12:11:15,523 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2025-11-28 12:11:15,578 - Knowledge - INFO - load persisted docinfo: begin
+2025-11-28 12:11:15,580 - Knowledge - INFO - load persisted docinfo: end
+2025-11-28 12:11:15,581 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-28 12:11:15,581 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2025-11-28 12:11:15,581 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-28 12:11:15,582 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8614m0
+2025-11-28 12:11:16,655 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-28 12:11:16,657 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2025-11-28 12:11:16,657 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-28 12:11:16,659 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-28 12:11:16,659 - Knowledge - INFO - load persisted knowledge: end
+2025-11-28 12:11:16,660 - Knowledge - INFO - 📁 Disk load complete in 1.14s
+2025-11-28 12:11:16,661 - Knowledge - INFO - Populating ingest queue with source files...
+2025-11-28 12:11:16,715 - Knowledge - INFO - Added 51 files from /app/data/T0002/179040/b8614m0/SpicKitchen to ingest queue
+2025-11-28 12:11:16,716 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-11-28 12:11:16,717 - Knowledge - INFO - knowledge worker kw1 start
+2025-11-28 12:11:16,717 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2025-11-28 12:11:16,718 - Knowledge - INFO - [kw1] Queue=51, InProgress=0, PendingWorkers=0/1, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,718 - Knowledge - INFO - knowledge worker kw2 start
+2025-11-28 12:11:16,718 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2025-11-28 12:11:16,719 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=51, active_workers=0/2
+2025-11-28 12:11:16,720 - Knowledge - INFO - knowledge worker kw3 start
+2025-11-28 12:11:16,720 - Knowledge - INFO - [kw2] Queue=51, InProgress=0, PendingWorkers=0/2, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,720 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2025-11-28 12:11:16,721 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:11:16,722 - Knowledge - INFO - [kw3] Queue=41, InProgress=0, PendingWorkers=1/3, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,722 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=51, active_workers=1/3
+2025-11-28 12:11:16,723 - Knowledge - INFO - knowledge worker kw4 start
+2025-11-28 12:11:16,723 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:11:16,723 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2025-11-28 12:11:16,724 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=41, active_workers=1/4
+2025-11-28 12:11:16,724 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:11:16,725 - Knowledge - INFO - [kw4] Queue=31, InProgress=0, PendingWorkers=2/4, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,726 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:11:16,727 - Knowledge - INFO - knowledge worker kw5 start
+2025-11-28 12:11:16,728 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php
+2025-11-28 12:11:16,728 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2025-11-28 12:11:16,728 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=31, active_workers=3/5
+2025-11-28 12:11:16,729 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:11:16,729 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:11:16,730 - Knowledge - INFO - [kw5] Queue=21, InProgress=0, PendingWorkers=3/5, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,731 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php (ext=.php, size=903)
+2025-11-28 12:11:16,732 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:11:16,732 - Knowledge - INFO - knowledge worker kw6 start
+2025-11-28 12:11:16,732 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2025-11-28 12:11:16,733 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:11:16,733 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php
+2025-11-28 12:11:16,734 - Knowledge - INFO - Batch sizing: calculated=10, max_allowed=25, queue=21, active_workers=4/6
+2025-11-28 12:11:16,735 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:11:16,735 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:11:16,736 - Knowledge - INFO - knowledge worker kw7 start
+2025-11-28 12:11:16,737 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2025-11-28 12:11:16,739 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php
+2025-11-28 12:11:16,739 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php (ext=.php, size=456)
+2025-11-28 12:11:16,739 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html
+2025-11-28 12:11:16,740 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/table.php
+2025-11-28 12:11:16,741 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php
+2025-11-28 12:11:16,743 - Knowledge - INFO - knowledge worker kw8 start
+2025-11-28 12:11:16,743 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php (ext=.php, size=1683)
+2025-11-28 12:11:16,744 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2025-11-28 12:11:16,744 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html
+2025-11-28 12:11:16,745 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html (ext=.html, size=1669)
+2025-11-28 12:11:16,745 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/table.php (ext=.php, size=1263)
+2025-11-28 12:11:16,746 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php (ext=.php, size=669)
+2025-11-28 12:11:16,747 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm
+2025-11-28 12:11:16,748 - Knowledge - INFO - knowledge worker kw9 start
+2025-11-28 12:11:16,748 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2025-11-28 12:11:16,750 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:11:16,750 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt
+2025-11-28 12:11:16,752 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php
+2025-11-28 12:11:16,753 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php
+2025-11-28 12:11:16,754 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm (ext=.htm, size=1459)
+2025-11-28 12:11:16,754 - Knowledge - INFO - knowledge worker kw10 start
+2025-11-28 12:11:16,755 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2025-11-28 12:11:16,755 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/category.php
+2025-11-28 12:11:16,756 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt (ext=.txt, size=4302)
+2025-11-28 12:11:16,756 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php (ext=.php, size=499)
+2025-11-28 12:11:16,757 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php (ext=.php, size=1165)
+2025-11-28 12:11:16,757 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:11:16,758 - Knowledge - INFO - [kw8] Queue=1, InProgress=0, PendingWorkers=5/10, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,761 - Knowledge - INFO - [kw6] Queue=1, InProgress=0, PendingWorkers=5/10, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,761 - Knowledge - INFO - knowledge worker kw11 start
+2025-11-28 12:11:16,762 - Knowledge - INFO - [kw7] Queue=1, InProgress=0, PendingWorkers=5/10, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,762 - Knowledge - INFO - [kw9] Queue=1, InProgress=0, PendingWorkers=5/10, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,762 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2025-11-28 12:11:16,763 - Knowledge - INFO - [kw10] Queue=1, InProgress=0, PendingWorkers=5/11, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,764 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt
+2025-11-28 12:11:16,764 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:11:16,764 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:11:16,765 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:11:16,765 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=5/11
+2025-11-28 12:11:16,765 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php
+2025-11-28 12:11:16,766 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=5/11
+2025-11-28 12:11:16,767 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=5/11
+2025-11-28 12:11:16,767 - Knowledge - INFO - [kw11] Queue=1, InProgress=0, PendingWorkers=5/11, Completed=0/51 (0.0%)
+2025-11-28 12:11:16,767 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=5/11
+2025-11-28 12:11:16,768 - Knowledge - INFO - knowledge worker kw12 start
+2025-11-28 12:11:16,768 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2025-11-28 12:11:16,769 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=5/12
+2025-11-28 12:11:16,770 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php
+2025-11-28 12:11:16,770 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt (ext=.txt, size=356)
+2025-11-28 12:11:16,771 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:11:16,772 - Knowledge - INFO - Worker kw8 processing /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html
+2025-11-28 12:11:16,772 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php
+2025-11-28 12:11:16,789 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php (ext=.php, size=1728)
+2025-11-28 12:11:16,794 - Knowledge - INFO - Batch sizing: calculated=1, max_allowed=25, queue=1, active_workers=6/12
+2025-11-28 12:11:16,823 - Knowledge - INFO - knowledge worker kw13 start
+2025-11-28 12:11:16,824 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2025-11-28 12:11:16,825 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php (ext=.php, size=1629)
+2025-11-28 12:11:16,826 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:11:16,827 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:11:16,828 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html (ext=.html, size=298)
+2025-11-28 12:11:16,828 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php (ext=.php, size=1484)
+2025-11-28 12:11:16,829 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:11:16,831 - Knowledge - INFO - knowledge worker kw14 start
+2025-11-28 12:11:16,831 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2025-11-28 12:11:16,833 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt (ext=.txt, size=1084)
+2025-11-28 12:11:16,834 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php
+2025-11-28 12:11:16,835 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:11:16,836 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php
+2025-11-28 12:11:16,837 - Knowledge - INFO - Processing batch of 1 files
+2025-11-28 12:11:16,838 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:11:16,839 - Knowledge - INFO - knowledge worker kw15 start
+2025-11-28 12:11:16,839 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php (ext=.php, size=756)
+2025-11-28 12:11:16,840 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2025-11-28 12:11:16,840 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php (ext=.php, size=102)
+2025-11-28 12:11:16,841 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html
+2025-11-28 12:11:16,842 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js
+2025-11-28 12:11:16,843 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php
+2025-11-28 12:11:16,844 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt (ext=.txt, size=445)
+2025-11-28 12:11:16,845 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php
+2025-11-28 12:11:16,846 - Knowledge - INFO - knowledge worker kw16 start
+2025-11-28 12:11:16,847 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2025-11-28 12:11:16,848 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:11:16,849 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:11:16,850 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php (ext=.php, size=1320)
+2025-11-28 12:11:16,859 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php (ext=.php, size=780)
+2025-11-28 12:11:16,860 - Knowledge - INFO - knowledge worker kw17 start
+2025-11-28 12:11:16,862 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2025-11-28 12:11:16,864 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:11:16,864 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php
+2025-11-28 12:11:16,864 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:11:16,865 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php
+2025-11-28 12:11:16,869 - Knowledge - INFO - knowledge worker kw18 start
+2025-11-28 12:11:16,875 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2025-11-28 12:11:16,891 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php (ext=.php, size=1082)
+2025-11-28 12:11:16,892 - Knowledge - INFO - knowledge worker kw19 start
+2025-11-28 12:11:16,893 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2025-11-28 12:11:16,923 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php
+2025-11-28 12:11:16,926 - Knowledge - INFO - knowledge worker kw20 start
+2025-11-28 12:11:16,932 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php (ext=.php, size=1802)
+2025-11-28 12:11:16,935 - Knowledge - INFO - Worker kw5 processing /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:11:17,044 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html (small file (2995 bytes))
+2025-11-28 12:11:17,122 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js (small file (3017 bytes))
+2025-11-28 12:11:17,136 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/category.php (small file (2473 bytes))
+2025-11-28 12:11:17,170 - Knowledge - INFO - Fast-tracked /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php (small file (2243 bytes))
+2025-11-28 12:11:20,470 - Knowledge - INFO - [LLM_CALL] Completed: index.html:chunk1, Duration: 3515ms, PromptTokens: 10112, CompletionTokens: 59, Cost: $0.00103
+2025-11-28 12:11:20,474 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:11:20,475 - Knowledge - INFO - [LLM_CALL] Completed: null.htm:chunk1, Duration: 3527ms, PromptTokens: 2554, CompletionTokens: 59, Cost: $0.00028
+2025-11-28 12:11:20,500 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:11:20,754 - Knowledge - INFO - [LLM_CALL] Completed: kitchen2.html:chunk1, Duration: 3712ms, PromptTokens: 10116, CompletionTokens: 59, Cost: $0.00104
+2025-11-28 12:11:20,756 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:11:23,142 - Knowledge - INFO - [LLM_CALL] Completed: adminpanel.php:chunk1, Duration: 6076ms, PromptTokens: 3762, CompletionTokens: 261, Cost: $0.00048
+2025-11-28 12:11:23,153 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:11:23,966 - Knowledge - INFO - [LLM_CALL] Completed: adminsignup.html:chunk1, Duration: 7075ms, PromptTokens: 3154, CompletionTokens: 156, Cost: $0.00038
+2025-11-28 12:11:23,966 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:11:24,348 - Knowledge - INFO - Processing batch of 10 files
+2025-11-28 12:11:24,349 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php
+2025-11-28 12:11:24,354 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm
+2025-11-28 12:11:24,359 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:11:24,488 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php
+2025-11-28 12:11:24,910 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:11:25,093 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php
+2025-11-28 12:11:25,203 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php
+2025-11-28 12:11:25,502 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php
+2025-11-28 12:11:25,672 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php
+2025-11-28 12:11:26,336 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:11:26,874 - Knowledge - INFO - [LLM_CALL] Completed: menuupdate.php:chunk1, Duration: 9939ms, PromptTokens: 2774, CompletionTokens: 286, Cost: $0.00039
+2025-11-28 12:11:26,879 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:11:27,241 - Knowledge - INFO - [LLM_CALL] Completed: newadminpanel.html:chunk1, Duration: 10106ms, PromptTokens: 13476, CompletionTokens: 59, Cost: $0.00137
+2025-11-28 12:11:27,242 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:11:27,762 - Knowledge - INFO - [LLM_CALL] Completed: userreg.php:chunk1, Duration: 10621ms, PromptTokens: 2516, CompletionTokens: 229, Cost: $0.00034
+2025-11-28 12:11:27,785 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:11:27,789 - Knowledge - INFO - [LLM_CALL] Completed: userlogin.php:chunk1, Duration: 10741ms, PromptTokens: 2348, CompletionTokens: 299, Cost: $0.00035
+2025-11-28 12:11:27,841 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:11:28,730 - Knowledge - INFO - [LLM_CALL] Completed: menu items.html:chunk1, Duration: 11757ms, PromptTokens: 5526, CompletionTokens: 397, Cost: $0.00071
+2025-11-28 12:11:28,736 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:11:29,467 - Knowledge - INFO - [LLM_CALL] Completed: dummyview.php:chunk1, Duration: 12438ms, PromptTokens: 3536, CompletionTokens: 326, Cost: $0.00048
+2025-11-28 12:11:29,467 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:11:29,705 - Knowledge - INFO - [LLM_CALL] Completed: forgetpassword.php:chunk1, Duration: 12865ms, PromptTokens: 2696, CompletionTokens: 278, Cost: $0.00038
+2025-11-28 12:11:29,748 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:11:30,357 - Knowledge - INFO - [LLM_CALL] Completed: useroutviewmenu.php:chunk1, Duration: 13304ms, PromptTokens: 2948, CompletionTokens: 251, Cost: $0.00040
+2025-11-28 12:11:30,363 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:11:30,542 - Knowledge - INFO - [LLM_CALL] Completed: booktableform.html:chunk1, Duration: 13491ms, PromptTokens: 3838, CompletionTokens: 531, Cost: $0.00060
+2025-11-28 12:11:30,561 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:11:30,871 - Knowledge - INFO - [LLM_CALL] Completed: adminlogin.html:chunk1, Duration: 13911ms, PromptTokens: 2914, CompletionTokens: 238, Cost: $0.00039
+2025-11-28 12:11:30,881 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:11:31,850 - Knowledge - INFO - [LLM_CALL] Completed: menuinsert.php:chunk1, Duration: 14822ms, PromptTokens: 2740, CompletionTokens: 276, Cost: $0.00038
+2025-11-28 12:11:31,856 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:11:32,428 - Knowledge - INFO - [LLM_CALL] Completed: usermenuview.php:chunk1, Duration: 15535ms, PromptTokens: 3470, CompletionTokens: 482, Cost: $0.00054
+2025-11-28 12:11:32,439 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:11:32,847 - Knowledge - INFO - [LLM_CALL] Completed: booktable.php:chunk1, Duration: 15708ms, PromptTokens: 4306, CompletionTokens: 375, Cost: $0.00058
+2025-11-28 12:11:32,855 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:11:33,727 - Knowledge - INFO - [LLM_CALL] Completed: gridmenu.php:chunk1, Duration: 16660ms, PromptTokens: 3008, CompletionTokens: 412, Cost: $0.00047
+2025-11-28 12:11:33,727 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:11:34,066 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2025-11-28 12:11:34,072 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 6ms
+2025-11-28 12:11:34,084 - Knowledge - INFO - Progress: 39.2% | Files: 22/51 | Rate: 1.00 files/sec | Queue: 0
+2025-11-28 12:11:34,088 - Knowledge - INFO - [LLM_CALL] Completed: navv.html:chunk1, Duration: 17105ms, PromptTokens: 4214, CompletionTokens: 293, Cost: $0.00054
+2025-11-28 12:11:34,092 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:11:34,128 - Knowledge - INFO - Processing batch of 10 files
+2025-11-28 12:11:34,129 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:11:34,134 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:11:34,230 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:11:34,495 - Knowledge - INFO - [LLM_CALL] Completed: adminlogin.php:chunk1, Duration: 17431ms, PromptTokens: 3250, CompletionTokens: 432, Cost: $0.00050
+2025-11-28 12:11:34,499 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:11:34,650 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html
+2025-11-28 12:11:34,693 - Knowledge - INFO - [LLM_CALL] Completed: cart.php:chunk1, Duration: 17741ms, PromptTokens: 2886, CompletionTokens: 413, Cost: $0.00045
+2025-11-28 12:11:34,694 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:11:34,745 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt
+2025-11-28 12:11:34,873 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt
+2025-11-28 12:11:34,952 - Knowledge - INFO - [LLM_CALL] Completed: wc.php:chunk1, Duration: 18061ms, PromptTokens: 3196, CompletionTokens: 459, Cost: $0.00050
+2025-11-28 12:11:34,954 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:11:35,073 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:11:35,268 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:11:35,318 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:11:35,319 - Knowledge - INFO - Processing batch of 10 files
+2025-11-28 12:11:35,322 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php
+2025-11-28 12:11:35,402 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:11:35,418 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:11:35,546 - Knowledge - INFO - [LLM_CALL] Completed: adminpanel.html:chunk1, Duration: 18380ms, PromptTokens: 4446, CompletionTokens: 429, Cost: $0.00062
+2025-11-28 12:11:35,547 - Knowledge - INFO - done ingest for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:11:35,552 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/table.php
+2025-11-28 12:11:35,560 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php
+2025-11-28 12:11:35,630 - Knowledge - INFO - Processing batch of 10 files
+2025-11-28 12:11:35,631 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:11:35,632 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:11:35,634 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:11:35,634 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:11:35,636 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:11:35,641 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php
+2025-11-28 12:11:35,642 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php
+2025-11-28 12:11:35,643 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php
+2025-11-28 12:11:35,645 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php
+2025-11-28 12:11:35,648 - Knowledge - INFO - Processing batch of 10 files
+2025-11-28 12:11:35,648 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:11:35,651 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:11:35,652 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:11:35,652 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:11:35,655 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php
+2025-11-28 12:11:35,715 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:11:35,716 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:11:35,717 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:11:35,782 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php
+2025-11-28 12:11:35,784 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js
+2025-11-28 12:11:35,847 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:11:35,910 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html
+2025-11-28 12:11:35,972 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:11:35,972 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php
+2025-11-28 12:11:35,975 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/category.php
+2025-11-28 12:11:36,101 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:11:36,221 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php
+2025-11-28 12:11:37,602 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2025-11-28 12:11:37,602 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1ms
+2025-11-28 12:11:37,603 - Knowledge - INFO - Progress: 100.0% | Files: 51/51 | Rate: 2.00 files/sec | Queue: 0
+2025-11-28 12:11:37,991 - Knowledge - INFO - Knowledge creation complete
+2025-11-28 12:11:37,992 - Knowledge - INFO - ==================================================
+2025-11-28 12:11:37,992 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-28 12:11:37,992 - Knowledge - INFO - ==================================================
+2025-11-28 12:11:37,993 - Knowledge - INFO - Total processing time: 25.88 seconds (0.43 minutes)
+2025-11-28 12:11:37,993 - Knowledge - INFO - Files processed: 0
+2025-11-28 12:11:37,993 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-11-28 12:11:37,994 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-11-28 12:11:37,994 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-11-28 12:11:37,996 - Knowledge - INFO - LLM Processing: 294.52s (1137.8%)
+2025-11-28 12:11:37,996 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-11-28 12:11:37,997 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-11-28 12:11:37,997 - Knowledge - INFO - WebSocket Communication: 0.01s (0.0%)
+2025-11-28 12:11:37,997 - Knowledge - INFO - 
+[LLM_STATS]
+2025-11-28 12:11:37,998 - Knowledge - INFO - Total LLM calls: 24
+2025-11-28 12:11:37,998 - Knowledge - INFO - Average LLM response time: 12272ms
+2025-11-28 12:11:37,998 - Knowledge - INFO - Average prompt tokens: 4324.4
+2025-11-28 12:11:37,999 - Knowledge - INFO - Average completion tokens: 294.1
+2025-11-28 12:11:37,999 - Knowledge - INFO - Total prompt tokens: 103786
+2025-11-28 12:11:37,999 - Knowledge - INFO - Total completion tokens: 7059
+2025-11-28 12:11:38,000 - Knowledge - INFO - Total LLM cost: $0.0132
+2025-11-28 12:11:38,000 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-11-28 12:11:38,000 - Knowledge - INFO - MongoDB operations: 0
+2025-11-28 12:11:38,001 - Knowledge - INFO - Redis operations: 0
+2025-11-28 12:11:38,001 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-11-28 12:11:38,001 - Knowledge - INFO - WebSocket messages sent: 4
+2025-11-28 12:11:38,002 - Knowledge - INFO - Average message size: 135.0 bytes
+2025-11-28 12:11:38,002 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-11-28 12:11:38,002 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-11-28 12:11:38,002 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-11-28 12:11:38,002 - Knowledge - INFO - ==================================================
+2025-11-28 12:11:38,003 - Knowledge - INFO - ==================================================
+2025-11-28 12:11:38,003 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-28 12:11:38,003 - Knowledge - INFO - ==================================================
+2025-11-28 12:11:38,004 - Knowledge - INFO - Total processing time: 25.97 seconds (0.43 minutes)
+2025-11-28 12:11:38,004 - Knowledge - INFO - Files processed: 51 of 51
+2025-11-28 12:11:38,004 - Knowledge - INFO - Processing rate: 1.96 files/second
+2025-11-28 12:11:38,004 - Knowledge - INFO - WebSocket messages sent: 2
+2025-11-28 12:11:38,005 - Knowledge - INFO - MongoDB operations: 51
+2025-11-28 12:11:38,005 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-11-28 12:11:38,005 - Knowledge - INFO - LLM costs: $0.0132
+2025-11-28 12:11:38,005 - Knowledge - INFO - Prompt tokens: 103786
+2025-11-28 12:11:38,006 - Knowledge - INFO - Completion tokens: 7059
+2025-11-28 12:11:38,008 - Knowledge - INFO - Updating org costs, total cost: 0.0132022
+2025-11-28 12:11:38,909 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
+2025-11-28 12:11:38,911 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-28 12:11:38,937 - Knowledge - INFO - Knowledge saved to Redis successfully
