@@ -337,3 +337,663 @@
 2025-11-28 12:11:38,909 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 267, Duration: 0ms
 2025-11-28 12:11:38,911 - Knowledge - INFO - Saving knowledge to Redis...
 2025-11-28 12:11:38,937 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-11-28 12:39:16,625 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-28 12:39:16,627 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-28 12:39:16,628 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-28 12:39:16,629 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-28 12:39:17,228 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-28 12:39:17,230 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-28 12:39:17,230 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-28 12:39:17,872 - Knowledge - INFO - Persisted knowledge files in /app/data/T0002/179040/b8614m0/SpicKitchen/.knowledge have been renamed to use .json
+2025-11-28 12:39:17,885 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:17,886 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:18,214 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:18,214 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:18,215 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:39:18,315 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2025-11-28 12:39:19,333 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menuinsert.php, Duration: 1013ms
+2025-11-28 12:39:19,335 - Knowledge - INFO - persist search terms embedding for menuinsert.php
+2025-11-28 12:39:19,339 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:39:19,344 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:19,345 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:19,425 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:19,425 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:19,426 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:39:19,525 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2025-11-28 12:39:19,804 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: cart.php, Duration: 275ms
+2025-11-28 12:39:19,804 - Knowledge - INFO - persist search terms embedding for cart.php
+2025-11-28 12:39:19,807 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:39:19,813 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:19,814 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:19,901 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:19,901 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:19,902 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:39:20,028 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 126ms
+2025-11-28 12:39:20,364 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: wc.php, Duration: 332ms
+2025-11-28 12:39:20,364 - Knowledge - INFO - persist search terms embedding for wc.php
+2025-11-28 12:39:20,367 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:39:20,374 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:20,374 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:20,440 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:20,441 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:20,441 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:39:20,555 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 114ms
+2025-11-28 12:39:20,837 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: forgetpassword.php, Duration: 279ms
+2025-11-28 12:39:20,838 - Knowledge - INFO - persist search terms embedding for forgetpassword.php
+2025-11-28 12:39:20,840 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:39:20,845 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:20,845 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:20,926 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:20,926 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:20,927 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:39:21,028 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2025-11-28 12:39:21,283 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminlogin.php, Duration: 252ms
+2025-11-28 12:39:21,284 - Knowledge - INFO - persist search terms embedding for adminlogin.php
+2025-11-28 12:39:21,286 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:39:21,294 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:21,295 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:21,375 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:21,376 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:21,376 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html
+2025-11-28 12:39:21,470 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2025-11-28 12:39:21,700 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menu.html, Duration: 226ms
+2025-11-28 12:39:21,701 - Knowledge - INFO - persist search terms embedding for menu.html
+2025-11-28 12:39:21,703 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html
+2025-11-28 12:39:21,708 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:21,709 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:21,786 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:21,786 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:21,787 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php
+2025-11-28 12:39:21,890 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2025-11-28 12:39:22,156 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminsignupignup.php, Duration: 264ms
+2025-11-28 12:39:22,157 - Knowledge - INFO - persist search terms embedding for adminsignupignup.php
+2025-11-28 12:39:22,160 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php
+2025-11-28 12:39:22,167 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:22,168 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:22,240 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:22,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:22,240 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php
+2025-11-28 12:39:22,334 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2025-11-28 12:39:22,580 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: sessions/index.php, Duration: 242ms
+2025-11-28 12:39:22,580 - Knowledge - INFO - persist search terms embedding for sessions/index.php
+2025-11-28 12:39:22,584 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php
+2025-11-28 12:39:22,591 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:22,592 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:22,659 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:22,660 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:22,660 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/category.php
+2025-11-28 12:39:22,773 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 113ms
+2025-11-28 12:39:23,050 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: category.php, Duration: 273ms
+2025-11-28 12:39:23,050 - Knowledge - INFO - persist search terms embedding for category.php
+2025-11-28 12:39:23,059 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/category.php
+2025-11-28 12:39:23,080 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:23,081 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:23,186 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:23,186 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:23,187 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:39:23,291 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2025-11-28 12:39:23,750 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminpanel.html, Duration: 456ms
+2025-11-28 12:39:23,751 - Knowledge - INFO - persist search terms embedding for adminpanel.html
+2025-11-28 12:39:23,754 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:39:23,762 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:23,763 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:23,839 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:23,840 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:23,840 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js
+2025-11-28 12:39:23,936 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2025-11-28 12:39:24,219 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: js/main.js, Duration: 281ms
+2025-11-28 12:39:24,220 - Knowledge - INFO - persist search terms embedding for js/main.js
+2025-11-28 12:39:24,225 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js
+2025-11-28 12:39:24,231 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:24,231 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:24,315 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:24,315 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:24,316 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:39:24,424 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 108ms
+2025-11-28 12:39:24,651 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: null.htm, Duration: 224ms
+2025-11-28 12:39:24,651 - Knowledge - INFO - persist search terms embedding for null.htm
+2025-11-28 12:39:24,654 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:39:24,667 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:24,668 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:24,738 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:24,738 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:24,739 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php
+2025-11-28 12:39:24,875 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 136ms
+2025-11-28 12:39:25,230 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: dummy.php, Duration: 352ms
+2025-11-28 12:39:25,231 - Knowledge - INFO - persist search terms embedding for dummy.php
+2025-11-28 12:39:25,233 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php
+2025-11-28 12:39:25,239 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:25,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:25,319 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:25,319 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:25,319 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:39:25,423 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2025-11-28 12:39:25,878 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminsignup.html, Duration: 453ms
+2025-11-28 12:39:25,879 - Knowledge - INFO - persist search terms embedding for adminsignup.html
+2025-11-28 12:39:25,882 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:39:25,887 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:25,888 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:25,957 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:25,958 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:25,958 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:39:26,068 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 109ms
+2025-11-28 12:39:26,438 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menu items.html, Duration: 366ms
+2025-11-28 12:39:26,439 - Knowledge - INFO - persist search terms embedding for menu items.html
+2025-11-28 12:39:26,441 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:39:26,446 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:26,447 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:26,522 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:26,522 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:26,522 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html
+2025-11-28 12:39:26,617 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2025-11-28 12:39:26,898 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: loader.html, Duration: 278ms
+2025-11-28 12:39:26,899 - Knowledge - INFO - persist search terms embedding for loader.html
+2025-11-28 12:39:26,901 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html
+2025-11-28 12:39:26,909 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:26,909 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:26,990 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:26,991 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:26,991 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:39:27,101 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2025-11-28 12:39:27,379 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: booktableform.html, Duration: 275ms
+2025-11-28 12:39:27,379 - Knowledge - INFO - persist search terms embedding for booktableform.html
+2025-11-28 12:39:27,382 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:39:27,388 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:27,388 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:27,463 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:27,464 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:27,464 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:39:27,551 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2025-11-28 12:39:27,819 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: newadminpanel.html, Duration: 260ms
+2025-11-28 12:39:27,820 - Knowledge - INFO - persist search terms embedding for newadminpanel.html
+2025-11-28 12:39:27,822 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:39:27,828 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:27,829 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:27,910 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:27,911 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:27,911 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php
+2025-11-28 12:39:28,005 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2025-11-28 12:39:28,282 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: txt.php, Duration: 275ms
+2025-11-28 12:39:28,283 - Knowledge - INFO - persist search terms embedding for txt.php
+2025-11-28 12:39:28,287 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php
+2025-11-28 12:39:28,293 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:28,294 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:28,392 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:28,393 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:28,393 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php
+2025-11-28 12:39:28,501 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2025-11-28 12:39:28,790 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: sessions/logout.php, Duration: 285ms
+2025-11-28 12:39:28,791 - Knowledge - INFO - persist search terms embedding for sessions/logout.php
+2025-11-28 12:39:28,793 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php
+2025-11-28 12:39:28,800 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:28,802 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:28,891 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:28,892 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:28,892 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:39:28,981 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2025-11-28 12:39:29,233 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: userlogin.php, Duration: 249ms
+2025-11-28 12:39:29,233 - Knowledge - INFO - persist search terms embedding for userlogin.php
+2025-11-28 12:39:29,236 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:39:29,242 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:29,242 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:29,315 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:29,316 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:29,316 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:39:29,414 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2025-11-28 12:39:29,722 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: navv.html, Duration: 306ms
+2025-11-28 12:39:29,723 - Knowledge - INFO - persist search terms embedding for navv.html
+2025-11-28 12:39:29,725 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:39:29,730 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:29,731 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:29,805 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:29,806 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:29,806 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php
+2025-11-28 12:39:29,919 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2025-11-28 12:39:30,159 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menudelete.php, Duration: 237ms
+2025-11-28 12:39:30,159 - Knowledge - INFO - persist search terms embedding for menudelete.php
+2025-11-28 12:39:30,162 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php
+2025-11-28 12:39:30,171 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:30,172 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:30,248 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:30,248 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:30,249 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/table.php
+2025-11-28 12:39:30,366 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 117ms
+2025-11-28 12:39:30,623 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: table.php, Duration: 251ms
+2025-11-28 12:39:30,623 - Knowledge - INFO - persist search terms embedding for table.php
+2025-11-28 12:39:30,626 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/table.php
+2025-11-28 12:39:30,633 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:30,634 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:30,734 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:30,734 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:30,735 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:39:30,837 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 102ms
+2025-11-28 12:39:31,116 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menuupdate.php, Duration: 277ms
+2025-11-28 12:39:31,117 - Knowledge - INFO - persist search terms embedding for menuupdate.php
+2025-11-28 12:39:31,119 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:39:31,125 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:31,126 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:31,207 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:31,207 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:31,207 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:39:31,303 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2025-11-28 12:39:31,580 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: gridmenu.php, Duration: 274ms
+2025-11-28 12:39:31,580 - Knowledge - INFO - persist search terms embedding for gridmenu.php
+2025-11-28 12:39:31,583 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:39:31,589 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:31,590 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:31,706 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:31,707 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:31,707 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php
+2025-11-28 12:39:31,829 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 122ms
+2025-11-28 12:39:32,070 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: iii.php, Duration: 238ms
+2025-11-28 12:39:32,070 - Knowledge - INFO - persist search terms embedding for iii.php
+2025-11-28 12:39:32,073 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php
+2025-11-28 12:39:32,080 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:32,080 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:32,172 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:32,172 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:32,173 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:39:32,290 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 117ms
+2025-11-28 12:39:32,546 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt, Duration: 253ms
+2025-11-28 12:39:32,547 - Knowledge - INFO - persist search terms embedding for fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:39:32,559 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:39:32,568 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:32,569 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:32,647 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:32,648 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:32,648 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:39:32,748 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2025-11-28 12:39:33,035 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: booktable.php, Duration: 285ms
+2025-11-28 12:39:33,036 - Knowledge - INFO - persist search terms embedding for booktable.php
+2025-11-28 12:39:33,039 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:39:33,046 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:33,047 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:33,123 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:33,124 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:33,125 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php
+2025-11-28 12:39:33,236 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2025-11-28 12:39:33,576 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: usertablereserve.php, Duration: 337ms
+2025-11-28 12:39:33,577 - Knowledge - INFO - persist search terms embedding for usertablereserve.php
+2025-11-28 12:39:33,579 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php
+2025-11-28 12:39:33,585 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:33,585 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:33,667 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:33,668 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:33,669 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:39:33,781 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2025-11-28 12:39:34,105 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminlogin.html, Duration: 319ms
+2025-11-28 12:39:34,106 - Knowledge - INFO - persist search terms embedding for adminlogin.html
+2025-11-28 12:39:34,108 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:39:34,114 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:34,114 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:34,198 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:34,198 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:34,199 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php
+2025-11-28 12:39:34,337 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 138ms
+2025-11-28 12:39:34,558 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menucart.php, Duration: 217ms
+2025-11-28 12:39:34,558 - Knowledge - INFO - persist search terms embedding for menucart.php
+2025-11-28 12:39:34,562 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php
+2025-11-28 12:39:34,570 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:34,570 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:34,652 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:34,652 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:34,653 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php
+2025-11-28 12:39:34,768 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2025-11-28 12:39:35,006 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: usertableout.php, Duration: 234ms
+2025-11-28 12:39:35,007 - Knowledge - INFO - persist search terms embedding for usertableout.php
+2025-11-28 12:39:35,009 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php
+2025-11-28 12:39:35,016 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:35,017 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:35,105 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:35,105 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:35,106 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:39:35,222 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 116ms
+2025-11-28 12:39:35,706 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: fonts/creamy-buttermilk/Font Guide!.txt, Duration: 480ms
+2025-11-28 12:39:35,706 - Knowledge - INFO - persist search terms embedding for fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:39:35,709 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:39:35,716 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:35,717 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:35,810 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:35,810 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:35,811 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt
+2025-11-28 12:39:35,912 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2025-11-28 12:39:36,185 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: fonts/README.txt, Duration: 269ms
+2025-11-28 12:39:36,185 - Knowledge - INFO - persist search terms embedding for fonts/README.txt
+2025-11-28 12:39:36,189 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt
+2025-11-28 12:39:36,195 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:36,195 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:36,281 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:36,282 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:36,282 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:39:36,397 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 115ms
+2025-11-28 12:39:36,618 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: usermenuview.php, Duration: 215ms
+2025-11-28 12:39:36,619 - Knowledge - INFO - persist search terms embedding for usermenuview.php
+2025-11-28 12:39:36,621 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:39:36,629 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:36,629 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:36,711 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:36,712 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:36,712 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php
+2025-11-28 12:39:36,811 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2025-11-28 12:39:37,039 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: sessions/login.php, Duration: 225ms
+2025-11-28 12:39:37,041 - Knowledge - INFO - persist search terms embedding for sessions/login.php
+2025-11-28 12:39:37,044 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php
+2025-11-28 12:39:37,049 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:37,050 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:37,134 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:37,135 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:37,135 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:39:37,240 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2025-11-28 12:39:37,520 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: useroutviewmenu.php, Duration: 277ms
+2025-11-28 12:39:37,520 - Knowledge - INFO - persist search terms embedding for useroutviewmenu.php
+2025-11-28 12:39:37,525 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:39:37,532 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:37,533 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:37,614 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:37,614 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:37,614 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php
+2025-11-28 12:39:37,761 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 147ms
+2025-11-28 12:39:37,998 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: sessions.php, Duration: 233ms
+2025-11-28 12:39:37,998 - Knowledge - INFO - persist search terms embedding for sessions.php
+2025-11-28 12:39:38,001 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php
+2025-11-28 12:39:38,006 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:38,007 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:38,101 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:38,101 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:38,102 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:39:38,209 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2025-11-28 12:39:38,525 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: dummyview.php, Duration: 313ms
+2025-11-28 12:39:38,525 - Knowledge - INFO - persist search terms embedding for dummyview.php
+2025-11-28 12:39:38,528 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:39:38,535 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:38,536 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:38,629 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:38,629 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:38,630 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php
+2025-11-28 12:39:38,729 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2025-11-28 12:39:38,986 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: menuout.php, Duration: 254ms
+2025-11-28 12:39:38,987 - Knowledge - INFO - persist search terms embedding for menuout.php
+2025-11-28 12:39:38,990 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php
+2025-11-28 12:39:38,998 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:38,998 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:39,105 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:39,106 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:39,106 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php
+2025-11-28 12:39:39,233 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 126ms
+2025-11-28 12:39:39,561 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: sessions/secure.php, Duration: 324ms
+2025-11-28 12:39:39,562 - Knowledge - INFO - persist search terms embedding for sessions/secure.php
+2025-11-28 12:39:39,566 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php
+2025-11-28 12:39:39,574 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:39,574 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:39,649 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:39,649 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:39,650 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:39:39,775 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 125ms
+2025-11-28 12:39:40,083 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: userreg.php, Duration: 301ms
+2025-11-28 12:39:40,083 - Knowledge - INFO - persist search terms embedding for userreg.php
+2025-11-28 12:39:40,085 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:39:40,092 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:40,093 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:40,194 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:40,195 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:40,196 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt
+2025-11-28 12:39:40,331 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 135ms
+2025-11-28 12:39:40,589 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: fonts/greatvibes/OFL.txt, Duration: 255ms
+2025-11-28 12:39:40,590 - Knowledge - INFO - persist search terms embedding for fonts/greatvibes/OFL.txt
+2025-11-28 12:39:40,595 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt
+2025-11-28 12:39:40,602 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:40,602 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:40,690 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:40,690 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:40,690 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:39:40,820 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 129ms
+2025-11-28 12:39:41,049 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: index.html, Duration: 225ms
+2025-11-28 12:39:41,049 - Knowledge - INFO - persist search terms embedding for index.html
+2025-11-28 12:39:41,053 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:39:41,059 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:41,060 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:41,187 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:41,188 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:41,188 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:39:41,303 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 115ms
+2025-11-28 12:39:41,539 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kitchen2.html, Duration: 230ms
+2025-11-28 12:39:41,540 - Knowledge - INFO - persist search terms embedding for kitchen2.html
+2025-11-28 12:39:41,542 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:39:41,549 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:41,549 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:41,640 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:41,641 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:41,641 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php
+2025-11-28 12:39:41,755 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 114ms
+2025-11-28 12:39:42,058 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: usersignup.php, Duration: 285ms
+2025-11-28 12:39:42,058 - Knowledge - INFO - persist search terms embedding for usersignup.php
+2025-11-28 12:39:42,062 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php
+2025-11-28 12:39:42,073 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:42,073 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:42,145 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:42,146 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:42,146 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php
+2025-11-28 12:39:42,241 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2025-11-28 12:39:42,537 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: cartview.php, Duration: 293ms
+2025-11-28 12:39:42,537 - Knowledge - INFO - persist search terms embedding for cartview.php
+2025-11-28 12:39:42,540 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php
+2025-11-28 12:39:42,546 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:42,547 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:42,641 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:42,641 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:42,641 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm
+2025-11-28 12:39:42,763 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 121ms
+2025-11-28 12:39:43,306 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: ordertable.htm, Duration: 533ms
+2025-11-28 12:39:43,306 - Knowledge - INFO - persist search terms embedding for ordertable.htm
+2025-11-28 12:39:43,308 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm
+2025-11-28 12:39:43,315 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:43,315 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:43,409 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:43,409 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:43,409 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html
+2025-11-28 12:39:43,538 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 129ms
+2025-11-28 12:39:43,886 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: fail.html, Duration: 344ms
+2025-11-28 12:39:43,886 - Knowledge - INFO - persist search terms embedding for fail.html
+2025-11-28 12:39:43,890 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html
+2025-11-28 12:39:43,896 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:43,897 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:43,990 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:39:43,990 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f8e6a07c950>
+2025-11-28 12:39:43,991 - Knowledge - INFO - persist ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:39:44,102 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 111ms
+2025-11-28 12:39:44,372 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: adminpanel.php, Duration: 268ms
+2025-11-28 12:39:44,374 - Knowledge - INFO - persist search terms embedding for adminpanel.php
+2025-11-28 12:39:44,378 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:39:44,378 - Knowledge - INFO - Loaded 51 files from persisted knowledge
+2025-11-28 12:39:44,379 - Knowledge - INFO - load persisted knowledge: end
+2025-11-28 12:39:44,389 - Knowledge - INFO - Redis support added with prefix knowledge:b8614m0:
+2025-11-28 12:39:44,523 - Knowledge - INFO - Starting knowledge initialization for ID: MgueBN-b8614m0
+2025-11-28 12:39:44,523 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8614m0
+2025-11-28 12:39:44,524 - Knowledge - INFO - 🔍 Full session ID: MgueBN-b8614m0
+2025-11-28 12:39:44,524 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8614m0:
+2025-11-28 12:39:44,524 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-28 12:39:44,525 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-28 12:39:44,525 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8614m0
+2025-11-28 12:39:45,749 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-11-28 12:39:45,750 - Knowledge - INFO - ✅ Successfully loaded from Redis: 51 files
+2025-11-28 12:39:45,750 - Knowledge - INFO - ✅ Redis load complete: 51 files in 1.23s
+2025-11-28 12:39:45,750 - Knowledge - INFO - ⚡ Total Redis path: 1.23s (vs ~300s from disk)
+2025-11-28 12:39:45,767 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-28 12:39:45,800 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-11-28 12:48:11,547 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-28 12:48:11,549 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2025-11-28 12:48:11,550 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-28 12:48:11,551 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=25, max_concurrent_llm_calls=50
+2025-11-28 12:48:12,386 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-28 12:48:12,389 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-28 12:48:12,390 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-28 12:48:12,998 - Knowledge - INFO - Persisted knowledge files in /app/data/T0002/179040/b8614m0/SpicKitchen/.knowledge have been renamed to use .json
+2025-11-28 12:48:13,020 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,021 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,025 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuinsert.php
+2025-11-28 12:48:13,033 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,034 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,038 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cart.php
+2025-11-28 12:48:13,047 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,048 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,051 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/wc.php
+2025-11-28 12:48:13,057 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,058 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,062 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/forgetpassword.php
+2025-11-28 12:48:13,077 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,077 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,082 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.php
+2025-11-28 12:48:13,089 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,090 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,093 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu.html
+2025-11-28 12:48:13,099 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,100 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,103 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignupignup.php
+2025-11-28 12:48:13,113 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,114 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,119 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/index.php
+2025-11-28 12:48:13,126 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,127 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,129 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/category.php
+2025-11-28 12:48:13,137 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,138 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,140 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.html
+2025-11-28 12:48:13,150 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,151 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,157 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/js/main.js
+2025-11-28 12:48:13,164 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,165 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,167 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/null.htm
+2025-11-28 12:48:13,175 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,175 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,179 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummy.php
+2025-11-28 12:48:13,185 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,186 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,189 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminsignup.html
+2025-11-28 12:48:13,197 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,198 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,200 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menu items.html
+2025-11-28 12:48:13,206 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,207 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,209 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/loader.html
+2025-11-28 12:48:13,215 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,216 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,218 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktableform.html
+2025-11-28 12:48:13,229 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,230 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,232 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/newadminpanel.html
+2025-11-28 12:48:13,237 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,238 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,240 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/txt.php
+2025-11-28 12:48:13,246 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,247 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,249 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/logout.php
+2025-11-28 12:48:13,255 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,256 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,260 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userlogin.php
+2025-11-28 12:48:13,268 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,269 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,271 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/navv.html
+2025-11-28 12:48:13,277 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,277 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,279 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menudelete.php
+2025-11-28 12:48:13,286 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,290 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,295 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/table.php
+2025-11-28 12:48:13,305 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,306 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,308 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuupdate.php
+2025-11-28 12:48:13,316 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,316 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,319 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/gridmenu.php
+2025-11-28 12:48:13,325 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,326 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,329 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/iii.php
+2025-11-28 12:48:13,336 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,336 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,346 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/IMPORTAN!! Readme First.txt
+2025-11-28 12:48:13,367 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,369 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,371 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/booktable.php
+2025-11-28 12:48:13,378 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,379 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,382 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertablereserve.php
+2025-11-28 12:48:13,389 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,389 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,391 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminlogin.html
+2025-11-28 12:48:13,397 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,398 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,400 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menucart.php
+2025-11-28 12:48:13,412 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,413 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,415 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usertableout.php
+2025-11-28 12:48:13,422 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,423 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,425 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/creamy-buttermilk/Font Guide!.txt
+2025-11-28 12:48:13,432 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,434 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,437 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/README.txt
+2025-11-28 12:48:13,443 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,444 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,446 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usermenuview.php
+2025-11-28 12:48:13,451 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,452 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,455 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/login.php
+2025-11-28 12:48:13,461 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,462 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,464 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/useroutviewmenu.php
+2025-11-28 12:48:13,470 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,471 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,473 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions.php
+2025-11-28 12:48:13,480 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,481 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,483 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/dummyview.php
+2025-11-28 12:48:13,489 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,490 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,493 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/menuout.php
+2025-11-28 12:48:13,499 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,499 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,502 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/sessions/secure.php
+2025-11-28 12:48:13,509 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,510 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,512 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/userreg.php
+2025-11-28 12:48:13,518 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,518 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,525 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fonts/greatvibes/OFL.txt
+2025-11-28 12:48:13,532 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,532 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,535 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/index.html
+2025-11-28 12:48:13,542 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,543 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,545 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/kitchen2.html
+2025-11-28 12:48:13,552 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,552 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,554 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/usersignup.php
+2025-11-28 12:48:13,562 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,562 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,565 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/cartview.php
+2025-11-28 12:48:13,572 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,573 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,575 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/ordertable.htm
+2025-11-28 12:48:13,583 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,583 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,586 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/fail.html
+2025-11-28 12:48:13,592 - Knowledge - INFO - Found code-base-name: https://github.com/sathish2003-pixel/SpicKitchen.git:main
+2025-11-28 12:48:13,592 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7facf3f635d0>
+2025-11-28 12:48:13,604 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/179040/b8614m0/SpicKitchen/adminpanel.php
+2025-11-28 12:48:13,606 - Knowledge - INFO - Loaded 51 files from persisted knowledge
+2025-11-28 12:48:13,606 - Knowledge - INFO - load persisted knowledge: end
+2025-11-28 12:48:13,625 - Knowledge - INFO - Redis support added with prefix knowledge:b8614m0:
+2025-11-28 12:48:13,769 - Knowledge - INFO - Starting knowledge initialization for ID: GNA2lp-b8614m0
+2025-11-28 12:48:13,772 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8614m0
+2025-11-28 12:48:13,772 - Knowledge - INFO - 🔍 Full session ID: GNA2lp-b8614m0
+2025-11-28 12:48:13,772 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8614m0:
+2025-11-28 12:48:13,772 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-28 12:48:13,774 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-28 12:48:13,774 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8614m0
+2025-11-28 12:48:15,057 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2025-11-28 12:48:15,058 - Knowledge - INFO - ✅ Successfully loaded from Redis: 51 files
+2025-11-28 12:48:15,060 - Knowledge - INFO - ✅ Redis load complete: 51 files in 1.29s
+2025-11-28 12:48:15,060 - Knowledge - INFO - ⚡ Total Redis path: 1.29s (vs ~300s from disk)
+2025-11-28 12:48:15,074 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-28 12:48:15,100 - Knowledge - INFO - Knowledge saved to Redis successfully
